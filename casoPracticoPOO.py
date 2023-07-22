@@ -6,8 +6,9 @@ class Matriz():
         self.n_t_matriz = n_t_matriz
         self.matriz = self.crear_matriz()
 
-    #Métodos
     """ 
+    Métodos
+    
     1.Crea la Matriz cuadrada de tamaño igual al Args: n_t_matriz 
     y la llena con números aleatorios del 0 al 9
     """
@@ -27,7 +28,7 @@ class Matriz():
         for fila in self.matriz:
             print(fila)
 
-    #3.Suma e imprime el total de las filas y las columnas
+    #3.Suma las filas y columnas de la Matriz
     def suma_columnas_filas(self):
         suma_filas = [sum(fila) for fila in self.matriz]
         suma_columnas = [sum(columna) for columna in zip(*self.matriz)]
