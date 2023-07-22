@@ -36,6 +36,7 @@ class Matriz():
 """
 Función para pedir el número del tamaño de la matriz y válida que sea un entero mayor o igual a 0
 Manejo de la excepción cuando se ingresa un valor no númerico para crear la matriz
+Se crea un bucle para que el usuario pueda volver a ingresar el valor si se ha equivocado
 """
 def pedir_numero():
     while True:
@@ -50,7 +51,7 @@ def pedir_numero():
 
 """
 Bloque principal: se crea un bucle para que el programa se ejecute hasta que el usuario ingrese 0
-para Salir y terminar la aplicación
+para Salir de la aplicación
 """
 
 if __name__ == '__main__':
